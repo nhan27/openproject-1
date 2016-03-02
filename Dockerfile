@@ -24,7 +24,7 @@ COPY Gemfile ./Gemfile
 COPY Gemfile.* ./
 RUN chown -R app:app /usr/src/app
 
-USER app
+USER root
 RUN bundle install
 
 USER root
