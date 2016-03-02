@@ -25,7 +25,7 @@ COPY Gemfile.* ./
 RUN chown -R app:app /usr/src/app
 
 USER app
-RUN bundle install --jobs 8 --retry 3
+RUN bundle install
 
 USER root
 # Then, npm install node modules
